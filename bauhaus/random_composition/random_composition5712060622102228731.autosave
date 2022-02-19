@@ -1,0 +1,17 @@
+color bg = #000000;
+color fg = #f1f1f1;
+
+int cirlceX, circleY, cirlceR;
+
+void setup() {
+  size(900,900);
+  
+  cirlceX = random(10, width);
+  circleY = random(10, height);
+  cirlceR = random(50, 100);
+}
+
+void draw() {
+  background(bg);
+  ellipse(cirlceX, circleY, cirlceR, cirlceR); 
+}
